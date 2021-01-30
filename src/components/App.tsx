@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import {CountryList} from 'pages/CountryList/CountryList';
+import './App.scss';
+import { CountryDetails } from 'pages/CountryDetails/CountryDetails';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Countries Of The World</h1>
-        </header>
+const App = () => {
+  return (
+    <div className="app">
+      <div className="app-blue-background" />
+      <div className="app-content">
+        <BrowserRouter>
+          <Route path="/" component={CountryList} exact />
+          <Route path="/:country" component={CountryDetails} />
+        </BrowserRouter>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;

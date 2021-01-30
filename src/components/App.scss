@@ -1,0 +1,20 @@
+.app {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-blue-background {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 50vh;
+    width: 100vw;
+    background-color: #6192CA;
+  }
+  &-content {
+    position: relative;
+    z-index: 1;
+  }
+}

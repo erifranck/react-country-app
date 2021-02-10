@@ -12,7 +12,7 @@ interface Props  {
 }
 
 // set an api key to show google map
-const GOOGLE_API = 'AIzaSyAk5rMVliEsdzRhRhLLC-jSBn2zQcyqvbE';
+const GOOGLE_API = '';
 
 interface MarkerProps {
   lat: number;
